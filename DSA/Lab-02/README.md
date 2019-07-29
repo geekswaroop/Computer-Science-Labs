@@ -1,9 +1,9 @@
-# Sorting and Searching Techniques
+# Sorting Techniques
 
 ## Due Date: 29th July
 
 * Bubble Sort
-* Selection Sort
 * Insertion Sort
-* Linear Search
-* Binary Search
+* Selection Sort
+* Merge Sort
+* Quick Sort
