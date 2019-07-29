@@ -92,7 +92,7 @@ Output: 109
 
 
 
-#### 5. Given N(<=26) followed by N distinct characters, we can find all possible 2N words(sequence of characters) which preserve the ordering in the input (assuming that all words are valid words in the language). For example, if N is 3 and characters are A, B and C, the words in the alphabet order are A, AB, ABC, AC, B, BC and C. Your task now, is to find the index of the word in the dictionary. i.e, if input is AC, output is 4. You may avoid generating all the words and comparing the word with every word in the dictionary. 
+#### 5. Given N(<=26) followed by N distinct characters, we can find all possible 2^N words(sequence of characters) which preserve the ordering in the input (assuming that all words are valid words in the language). For example, if N is 3 and characters are A, B and C, the words in the alphabet order are A, AB, ABC, AC, B, BC and C. Your task now, is to find the index of the word in the dictionary. i.e, if input is AC, output is 4. You may avoid generating all the words and comparing the word with every word in the dictionary. 
 
 ##### Input Specification:
 
