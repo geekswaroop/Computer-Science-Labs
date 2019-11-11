@@ -31,7 +31,7 @@ void maxheapify(int arr[], int n, int i)
     temp = arr[i];
     arr[i] = arr[largest];
     arr[largest] = temp;
-    maxheapify(arr,n,largest);
+    maxheapify(arr, n, largest);
   }
 }
 
