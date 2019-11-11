@@ -1,0 +1,35 @@
+$date
+	Sat Oct 12 19:11:49 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module NAND_tb $end
+$var wire 1 ! out $end
+$var reg 1 " in_a $end
+$var reg 1 # in_b $end
+$scope module h1 $end
+$var wire 1 " in_a $end
+$var wire 1 # in_b $end
+$var wire 1 ! out $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0#
+0"
+1!
+$end
+#10
+1"
+#20
+1#
+0"
+#30
+0!
+1"
+#40

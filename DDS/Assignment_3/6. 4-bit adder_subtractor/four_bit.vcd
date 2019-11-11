@@ -1,0 +1,220 @@
+$date
+	Sat Oct 12 23:27:17 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module four_bit_tb $end
+$var wire 1 ! s4 $end
+$var wire 1 " s3 $end
+$var wire 1 # s2 $end
+$var wire 1 $ s1 $end
+$var wire 1 % c3 $end
+$var wire 1 & c2 $end
+$var wire 1 ' c1 $end
+$var reg 1 ( a1 $end
+$var reg 1 ) a2 $end
+$var reg 1 * a3 $end
+$var reg 1 + a4 $end
+$var reg 1 , b1 $end
+$var reg 1 - b2 $end
+$var reg 1 . b3 $end
+$var reg 1 / b4 $end
+$var reg 1 0 m $end
+$scope module f1 $end
+$var wire 1 ' carry $end
+$var wire 1 ( in_a $end
+$var wire 1 , in_b $end
+$var wire 1 0 in_c $end
+$var wire 1 1 z $end
+$var wire 1 2 y $end
+$var wire 1 3 x $end
+$var wire 1 $ sum $end
+$scope module h1 $end
+$var wire 1 2 carry $end
+$var wire 1 ( in_a $end
+$var wire 1 , in_b $end
+$var wire 1 3 sum $end
+$upscope $end
+$scope module h2 $end
+$var wire 1 1 carry $end
+$var wire 1 3 in_a $end
+$var wire 1 0 in_b $end
+$var wire 1 $ sum $end
+$upscope $end
+$upscope $end
+$scope module f2 $end
+$var wire 1 & carry $end
+$var wire 1 ) in_a $end
+$var wire 1 - in_b $end
+$var wire 1 ' in_c $end
+$var wire 1 4 z $end
+$var wire 1 5 y $end
+$var wire 1 6 x $end
+$var wire 1 # sum $end
+$scope module h1 $end
+$var wire 1 5 carry $end
+$var wire 1 ) in_a $end
+$var wire 1 - in_b $end
+$var wire 1 6 sum $end
+$upscope $end
+$scope module h2 $end
+$var wire 1 4 carry $end
+$var wire 1 6 in_a $end
+$var wire 1 ' in_b $end
+$var wire 1 # sum $end
+$upscope $end
+$upscope $end
+$scope module f3 $end
+$var wire 1 % carry $end
+$var wire 1 * in_a $end
+$var wire 1 . in_b $end
+$var wire 1 & in_c $end
+$var wire 1 7 z $end
+$var wire 1 8 y $end
+$var wire 1 9 x $end
+$var wire 1 " sum $end
+$scope module h1 $end
+$var wire 1 8 carry $end
+$var wire 1 * in_a $end
+$var wire 1 . in_b $end
+$var wire 1 9 sum $end
+$upscope $end
+$scope module h2 $end
+$var wire 1 7 carry $end
+$var wire 1 9 in_a $end
+$var wire 1 & in_b $end
+$var wire 1 " sum $end
+$upscope $end
+$upscope $end
+$scope module f4 $end
+$var wire 1 : carry $end
+$var wire 1 + in_a $end
+$var wire 1 / in_b $end
+$var wire 1 % in_c $end
+$var wire 1 ; z $end
+$var wire 1 < y $end
+$var wire 1 = x $end
+$var wire 1 ! sum $end
+$scope module h1 $end
+$var wire 1 < carry $end
+$var wire 1 + in_a $end
+$var wire 1 / in_b $end
+$var wire 1 = sum $end
+$upscope $end
+$scope module h2 $end
+$var wire 1 ; carry $end
+$var wire 1 = in_a $end
+$var wire 1 % in_b $end
+$var wire 1 ! sum $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1=
+0<
+1;
+1:
+09
+18
+07
+16
+05
+14
+03
+12
+01
+00
+1/
+1.
+1-
+1,
+0+
+1*
+0)
+1(
+1'
+1&
+1%
+0$
+0#
+1"
+0!
+$end
+#10
+0&
+1#
+04
+1"
+07
+0%
+1$
+0'
+0!
+0;
+19
+08
+13
+02
+0=
+1<
+0.
+0(
+1+
+#20
+0$
+0"
+0:
+03
+09
+0<
+0,
+0-
+0/
+1)
+0*
+0+
+#30
+1$
+1"
+13
+19
+1(
+1*
+#40
+0$
+0#
+0"
+1!
+03
+06
+09
+1=
+0(
+0)
+0*
+1+
+#50
+0!
+0=
+0+
+#60
+1$
+1#
+1!
+13
+16
+1=
+1(
+1)
+1+
+#70
+1"
+19
+1*
+#80

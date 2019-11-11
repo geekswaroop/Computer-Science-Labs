@@ -1,0 +1,715 @@
+$date
+	Sun Oct 13 10:09:52 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module Carry_Lookahead_tb $end
+$var wire 1 ! c $end
+$var wire 4 " S [3:0] $end
+$var reg 4 # A [3:0] $end
+$var reg 4 $ B [3:0] $end
+$scope module Add $end
+$var wire 4 % A [3:0] $end
+$var wire 4 & B [3:0] $end
+$var wire 1 ! c $end
+$var wire 4 ' S [3:0] $end
+$var wire 4 ( P [3:0] $end
+$var wire 4 ) G [3:0] $end
+$var wire 5 * C [4:0] $end
+$scope begin genblk1[0] $end
+$scope module HA $end
+$var wire 1 + carry $end
+$var wire 1 , in_a $end
+$var wire 1 - in_b $end
+$var wire 1 . sum $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[1] $end
+$scope module HA $end
+$var wire 1 / carry $end
+$var wire 1 0 in_a $end
+$var wire 1 1 in_b $end
+$var wire 1 2 sum $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[2] $end
+$scope module HA $end
+$var wire 1 3 carry $end
+$var wire 1 4 in_a $end
+$var wire 1 5 in_b $end
+$var wire 1 6 sum $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[3] $end
+$scope module HA $end
+$var wire 1 7 carry $end
+$var wire 1 8 in_a $end
+$var wire 1 9 in_b $end
+$var wire 1 : sum $end
+$upscope $end
+$upscope $end
+$scope begin genblk2[0] $end
+$scope module FA $end
+$var wire 1 ; a $end
+$var wire 1 < b $end
+$var wire 1 = cin $end
+$var wire 1 > cout $end
+$var wire 1 ? s1 $end
+$var wire 1 @ fsum $end
+$var wire 1 A c2 $end
+$var wire 1 B c1 $end
+$scope module HA1 $end
+$var wire 1 B carry $end
+$var wire 1 ; in_a $end
+$var wire 1 < in_b $end
+$var wire 1 ? sum $end
+$upscope $end
+$scope module HA2 $end
+$var wire 1 A carry $end
+$var wire 1 ? in_a $end
+$var wire 1 = in_b $end
+$var wire 1 @ sum $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk2[1] $end
+$scope module FA $end
+$var wire 1 C a $end
+$var wire 1 D b $end
+$var wire 1 E cin $end
+$var wire 1 F cout $end
+$var wire 1 G s1 $end
+$var wire 1 H fsum $end
+$var wire 1 I c2 $end
+$var wire 1 J c1 $end
+$scope module HA1 $end
+$var wire 1 J carry $end
+$var wire 1 C in_a $end
+$var wire 1 D in_b $end
+$var wire 1 G sum $end
+$upscope $end
+$scope module HA2 $end
+$var wire 1 I carry $end
+$var wire 1 G in_a $end
+$var wire 1 E in_b $end
+$var wire 1 H sum $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk2[2] $end
+$scope module FA $end
+$var wire 1 K a $end
+$var wire 1 L b $end
+$var wire 1 M cin $end
+$var wire 1 N cout $end
+$var wire 1 O s1 $end
+$var wire 1 P fsum $end
+$var wire 1 Q c2 $end
+$var wire 1 R c1 $end
+$scope module HA1 $end
+$var wire 1 R carry $end
+$var wire 1 K in_a $end
+$var wire 1 L in_b $end
+$var wire 1 O sum $end
+$upscope $end
+$scope module HA2 $end
+$var wire 1 Q carry $end
+$var wire 1 O in_a $end
+$var wire 1 M in_b $end
+$var wire 1 P sum $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk2[3] $end
+$scope module FA $end
+$var wire 1 S a $end
+$var wire 1 T b $end
+$var wire 1 U cin $end
+$var wire 1 V cout $end
+$var wire 1 W s1 $end
+$var wire 1 X fsum $end
+$var wire 1 Y c2 $end
+$var wire 1 Z c1 $end
+$scope module HA1 $end
+$var wire 1 Z carry $end
+$var wire 1 S in_a $end
+$var wire 1 T in_b $end
+$var wire 1 W sum $end
+$upscope $end
+$scope module HA2 $end
+$var wire 1 Y carry $end
+$var wire 1 W in_a $end
+$var wire 1 U in_b $end
+$var wire 1 X sum $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0Z
+0Y
+0X
+0W
+0V
+0U
+0T
+0S
+0R
+0Q
+1P
+1O
+0N
+0M
+1L
+0K
+0J
+0I
+1H
+1G
+0F
+0E
+1D
+0C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+16
+15
+04
+03
+12
+11
+00
+0/
+0.
+0-
+0,
+0+
+b0 *
+b0 )
+b110 (
+b110 '
+b110 &
+b0 %
+b110 $
+b0 #
+b110 "
+0!
+$end
+#50
+1@
+0P
+b1011 "
+b1011 '
+1X
+1.
+06
+1?
+0O
+b1011 (
+1:
+1W
+1-
+01
+05
+1<
+0D
+0L
+10
+18
+1C
+1S
+b1 $
+b1 &
+b1010 #
+b1010 %
+#100
+1!
+1V
+0X
+1Y
+1U
+1N
+1Q
+1M
+b11100 *
+0H
+1F
+b1 "
+b1 '
+0P
+02
+b10 )
+1/
+0G
+1J
+b1101 (
+16
+1O
+0-
+11
+19
+0<
+1D
+1T
+1,
+14
+08
+1;
+1K
+0S
+b1010 $
+b1010 &
+b111 #
+b111 %
+#150
+1I
+1E
+1M
+b11110 *
+0@
+1>
+1P
+0Q
+b100 "
+b100 '
+0H
+1F
+0.
+1+
+06
+13
+0?
+1B
+0O
+1R
+b1010 (
+12
+b101 )
+0/
+1G
+0J
+1-
+15
+1<
+1L
+00
+0C
+b1111 $
+b1111 &
+b101 #
+b101 %
+#200
+0P
+0M
+0E
+0F
+b11000 *
+0H
+0I
+1@
+0>
+b1001 "
+b1001 '
+1X
+0Y
+02
+0G
+1.
+0+
+b1 (
+0:
+b1100 )
+17
+1?
+0B
+0W
+1Z
+01
+0D
+0,
+18
+0;
+1S
+b1101 $
+b1101 &
+b1100 #
+b1100 %
+#250
+1Q
+1M
+1F
+1I
+1U
+1E
+1!
+b11110 *
+0P
+1N
+0@
+1>
+0H
+b0 "
+b0 '
+0X
+1Y
+1V
+16
+03
+1O
+0R
+0.
+1+
+12
+b1110 (
+1:
+b1 )
+07
+0?
+1B
+1G
+1W
+0Z
+05
+0L
+1,
+10
+08
+1;
+1C
+0S
+b1001 $
+b1001 &
+b111 #
+b111 %
+#300
+11
+15
+1D
+1L
+00
+04
+0C
+0K
+b1111 $
+b1111 &
+b1 #
+b1 %
+#350
+0!
+0V
+1X
+0Y
+0U
+0N
+1P
+0Q
+0M
+0F
+1H
+0I
+0E
+b0 *
+b1111 "
+b1111 '
+1@
+0>
+b1111 (
+1.
+b0 )
+0+
+1?
+0B
+0-
+05
+0<
+0L
+14
+1K
+b1010 $
+b1010 &
+b101 #
+b101 %
+#400
+1U
+1N
+0P
+1Q
+1M
+1!
+b11100 *
+0H
+1F
+b1001 "
+b1001 '
+1X
+1V
+02
+1/
+b101 (
+0:
+b1010 )
+17
+0G
+1J
+0W
+1Z
+10
+18
+1C
+1S
+b1111 #
+b1111 %
+#450
+0U
+0!
+b100 *
+0N
+1X
+0Y
+0V
+b1101 "
+b1101 '
+1P
+0Q
+1:
+b10 )
+07
+1W
+0Z
+b1001 (
+06
+0O
+1-
+09
+1<
+0T
+0,
+04
+0;
+0K
+b11 $
+b11 &
+b1010 #
+b1010 %
+#500
+0!
+0V
+1X
+0Y
+0U
+0M
+0N
+b0 *
+1P
+0Q
+b1111 "
+b1111 '
+1H
+0F
+16
+1O
+b1111 (
+12
+b0 )
+0/
+1G
+0J
+15
+1L
+00
+0C
+b111 $
+b111 &
+b1000 #
+b1000 %
+#550
+1E
+b10 *
+1H
+0@
+1>
+b110 "
+b110 '
+0X
+02
+0G
+0.
+b1 )
+1+
+b100 (
+0:
+0?
+1B
+0W
+01
+05
+0D
+0L
+1,
+14
+08
+1;
+1K
+0S
+b1 $
+b1 &
+b101 #
+b101 %
+#600
+1!
+1V
+1M
+1Y
+1U
+b11110 *
+1F
+0H
+1I
+1P
+1N
+b100 "
+b100 '
+0X
+12
+06
+b101 )
+13
+b1010 (
+1:
+1G
+0O
+1R
+1W
+11
+15
+19
+1D
+1L
+1T
+b1111 $
+b1111 &
+#650
+0U
+b10110 *
+0N
+b100 "
+b100 '
+0X
+0Y
+03
+b10 (
+0:
+b1001 )
+17
+0R
+0W
+1Z
+01
+05
+0D
+0L
+10
+04
+18
+1C
+0K
+1S
+b1001 $
+b1001 &
+b1011 #
+b1011 %
+#700
+0P
+0M
+0F
+1H
+0I
+0E
+0!
+b0 *
+b11 "
+b11 '
+1@
+0>
+0V
+b11 (
+1.
+0+
+1?
+0B
+b0 )
+07
+0Z
+0-
+11
+09
+0<
+1D
+0T
+00
+08
+0C
+0S
+b10 $
+b10 &
+b1 #
+b1 %
+#750
+1P
+1M
+1F
+0H
+1I
+1X
+1E
+1U
+1!
+b11110 *
+b1100 "
+b1100 '
+0@
+1>
+1N
+1V
+b10 (
+0.
+1+
+0?
+1B
+13
+b1101 )
+17
+1R
+1Z
+1-
+15
+19
+1<
+1L
+1T
+14
+18
+1K
+1S
+b1111 $
+b1111 &
+b1101 #
+b1101 %
+#800

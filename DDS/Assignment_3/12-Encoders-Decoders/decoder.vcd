@@ -1,0 +1,92 @@
+$date
+	Sun Oct 13 10:14:13 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module decoder_tb $end
+$var wire 16 ! D [15:0] $end
+$var reg 4 " K [3:0] $end
+$var reg 1 # enable $end
+$scope module Dec $end
+$var wire 4 $ K [3:0] $end
+$var wire 1 # enable $end
+$var wire 16 % out [15:0] $end
+$var reg 16 & temp [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx &
+bx %
+b0 $
+0#
+b0 "
+bx !
+$end
+#50
+b10 !
+b10 %
+b10 &
+b1 "
+b1 $
+1#
+#100
+b100 !
+b100 %
+b100 &
+b10 "
+b10 $
+#150
+bx !
+bx %
+bx &
+b11 "
+b11 $
+0#
+#200
+b10000 !
+b10000 %
+b10000 &
+b100 "
+b100 $
+1#
+#250
+bx !
+bx %
+bx &
+b101 "
+b101 $
+0#
+#300
+b1000000000000000 !
+b1000000000000000 %
+b1000000000000000 &
+b1111 "
+b1111 $
+1#
+#350
+bx !
+bx %
+bx &
+b1110 "
+b1110 $
+0#
+#400
+b10000000000000 !
+b10000000000000 %
+b10000000000000 &
+b1101 "
+b1101 $
+1#
+#450
+b1000000000000 !
+b1000000000000 %
+b1000000000000 &
+b1100 "
+b1100 $
+#500

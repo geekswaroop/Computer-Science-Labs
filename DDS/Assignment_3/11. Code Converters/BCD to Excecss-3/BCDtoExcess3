@@ -1,0 +1,167 @@
+#! /usr/local/bin/vvp
+:ivl_version "11.0 (devel)" "(s20150603-664-g65aff653)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "vhdl_textio";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x55b2cd9559c0 .scope module, "BCDtoExcess3_tb" "BCDtoExcess3_tb" 2 21;
+ .timescale -9 -9;
+v0x55b2cd9803f0_0 .var "a", 0 0;
+v0x55b2cd9804b0_0 .var "b", 0 0;
+v0x55b2cd980580_0 .var "c", 0 0;
+v0x55b2cd980680_0 .var "d", 0 0;
+v0x55b2cd980750_0 .net "w", 0 0, L_0x55b2cd980bd0;  1 drivers
+v0x55b2cd9807f0_0 .net "x", 0 0, L_0x55b2cd980d30;  1 drivers
+v0x55b2cd9808c0_0 .net "y", 0 0, L_0x55b2cd980ee0;  1 drivers
+v0x55b2cd980990_0 .net "z", 0 0, L_0x55b2cd980e20;  1 drivers
+S_0x55b2cd9647e0 .scope module, "h1" "BCDtoExcess3" 2 30, 2 3 0, S_0x55b2cd9559c0;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /INPUT 1 "c";
+    .port_info 3 /INPUT 1 "d";
+    .port_info 4 /OUTPUT 1 "w";
+    .port_info 5 /OUTPUT 1 "x";
+    .port_info 6 /OUTPUT 1 "y";
+    .port_info 7 /OUTPUT 1 "z";
+L_0x55b2cd9552b0 .functor OR 1, v0x55b2cd980580_0, v0x55b2cd980680_0, C4<0>, C4<0>;
+L_0x55b2cd955320 .functor AND 1, v0x55b2cd9804b0_0, L_0x55b2cd9552b0, C4<1>, C4<1>;
+L_0x55b2cd980bd0 .functor OR 1, v0x55b2cd9803f0_0, L_0x55b2cd955320, C4<0>, C4<0>;
+L_0x55b2cd980d30 .functor XOR 1, v0x55b2cd9804b0_0, L_0x55b2cd9552b0, C4<0>, C4<0>;
+L_0x55b2cd980e20 .functor NOT 1, v0x55b2cd980680_0, C4<0>, C4<0>, C4<0>;
+L_0x55b2cd980ee0 .functor XNOR 1, v0x55b2cd980580_0, v0x55b2cd980680_0, C4<0>, C4<0>;
+v0x55b2cd964a90_0 .net "a", 0 0, v0x55b2cd9803f0_0;  1 drivers
+v0x55b2cd97fc00_0 .net "b", 0 0, v0x55b2cd9804b0_0;  1 drivers
+v0x55b2cd97fcc0_0 .net "c", 0 0, v0x55b2cd980580_0;  1 drivers
+v0x55b2cd97fd60_0 .net "d", 0 0, v0x55b2cd980680_0;  1 drivers
+v0x55b2cd97fe20_0 .net "e", 0 0, L_0x55b2cd9552b0;  1 drivers
+v0x55b2cd97ff30_0 .net "f", 0 0, L_0x55b2cd955320;  1 drivers
+v0x55b2cd97fff0_0 .net "w", 0 0, L_0x55b2cd980bd0;  alias, 1 drivers
+v0x55b2cd9800b0_0 .net "x", 0 0, L_0x55b2cd980d30;  alias, 1 drivers
+v0x55b2cd980170_0 .net "y", 0 0, L_0x55b2cd980ee0;  alias, 1 drivers
+v0x55b2cd980230_0 .net "z", 0 0, L_0x55b2cd980e20;  alias, 1 drivers
+    .scope S_0x55b2cd9559c0;
+T_0 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55b2cd9803f0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55b2cd9804b0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55b2cd980580_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55b2cd980680_0, 0, 1;
+    %end;
+    .thread T_0;
+    .scope S_0x55b2cd9559c0;
+T_1 ;
+    %vpi_call 2 34 "$dumpfile", "BCDtoExcess3.vcd" {0 0 0};
+    %vpi_call 2 35 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x55b2cd9559c0 {0 0 0};
+    %end;
+    .thread T_1;
+    .scope S_0x55b2cd9559c0;
+T_2 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55b2cd9803f0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55b2cd9804b0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55b2cd980580_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55b2cd980680_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55b2cd9803f0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55b2cd9804b0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55b2cd980580_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55b2cd980680_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55b2cd9803f0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55b2cd9804b0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55b2cd980580_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55b2cd980680_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55b2cd9803f0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55b2cd9804b0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55b2cd980580_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55b2cd980680_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55b2cd9803f0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55b2cd9804b0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55b2cd980580_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55b2cd980680_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55b2cd9803f0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55b2cd9804b0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55b2cd980580_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55b2cd980680_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55b2cd9803f0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55b2cd9804b0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55b2cd980580_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55b2cd980680_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55b2cd9803f0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55b2cd9804b0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55b2cd980580_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55b2cd980680_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55b2cd9803f0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55b2cd9804b0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55b2cd980580_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55b2cd980680_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55b2cd9803f0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55b2cd9804b0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55b2cd980580_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55b2cd980680_0, 0, 1;
+    %delay 10, 0;
+    %end;
+    .thread T_2;
+    .scope S_0x55b2cd9559c0;
+T_3 ;
+    %vpi_call 2 94 "$monitor", "A = %d\011B = %d\011C = %d\011D = %d\011\011W = %d\011X = %d\011Y = %d\011Z = %d\011", v0x55b2cd9803f0_0, v0x55b2cd9804b0_0, v0x55b2cd980580_0, v0x55b2cd980680_0, v0x55b2cd980750_0, v0x55b2cd9807f0_0, v0x55b2cd9808c0_0, v0x55b2cd980990_0 {0 0 0};
+    %end;
+    .thread T_3;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "BCDtoExcess3.v";

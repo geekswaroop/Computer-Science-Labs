@@ -1,0 +1,101 @@
+$date
+	Fri Nov  8 20:13:23 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module alu_tb $end
+$var wire 1 ! flag $end
+$var wire 1 " carry_out $end
+$var wire 64 # Result [63:0] $end
+$var reg 64 $ a [63:0] $end
+$var reg 64 % b [63:0] $end
+$var reg 64 & carry_in [63:0] $end
+$var reg 4 ' operation [3:0] $end
+$scope module c $end
+$var wire 64 ( a [63:0] $end
+$var wire 64 ) b [63:0] $end
+$var wire 64 * carry_in [63:0] $end
+$var wire 4 + operation [3:0] $end
+$var reg 64 , Result [63:0] $end
+$var reg 1 " carry_out $end
+$var reg 1 ! flag $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 ,
+b0 +
+b0 *
+b0 )
+b0 (
+b0 '
+b0 &
+b0 %
+b0 $
+b0 #
+x"
+0!
+$end
+#20
+b10 #
+b10 ,
+b1 '
+b1 +
+b10 $
+b10 (
+#40
+b11 #
+b11 ,
+b11 %
+b11 )
+#60
+b10 #
+b10 ,
+b0 '
+b0 +
+#80
+0"
+b101 #
+b101 ,
+b10 '
+b10 +
+#100
+1"
+b1111111111111111111111111111111111111111111111111111111111111111 #
+b1111111111111111111111111111111111111111111111111111111111111111 ,
+b110 '
+b110 +
+#120
+b1111111101 #
+b1111111101 ,
+b10000000000 $
+b10000000000 (
+#140
+0"
+b10000000100 #
+b10000000100 ,
+b1 &
+b1 *
+b10 '
+b10 +
+#180
+b1010 '
+b1010 +
+#200
+b1111000 %
+b1111000 )
+#220
+b1001 $
+b1001 (
+#240
+b1011 '
+b1011 +
+#260
+b10110 %
+b10110 )
+#270

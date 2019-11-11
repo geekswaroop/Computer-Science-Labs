@@ -1,0 +1,57 @@
+$date
+	Sun Oct 13 09:45:24 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module bcdadder_tb $end
+$var wire 4 ! sum [3:0] $end
+$var wire 1 " carry $end
+$var reg 4 # a [3:0] $end
+$var reg 4 $ b [3:0] $end
+$var reg 1 % carry_in $end
+$scope module uut $end
+$var wire 4 & a [3:0] $end
+$var wire 4 ' b [3:0] $end
+$var wire 1 % carry_in $end
+$var reg 1 " carry $end
+$var reg 4 ( sum [3:0] $end
+$var reg 5 ) sum_temp [4:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 )
+b1 (
+b1 '
+b0 &
+0%
+b1 $
+b0 #
+0"
+b1 !
+$end
+#100
+b1000 !
+b1000 (
+b1000 )
+1%
+b100 $
+b100 '
+b11 #
+b11 &
+#200
+b1 !
+b1 (
+1"
+b10001 )
+0%
+b11 $
+b11 '
+b1000 #
+b1000 &
+#300

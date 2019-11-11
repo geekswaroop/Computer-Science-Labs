@@ -1,0 +1,112 @@
+$date
+	Sun Oct 13 00:26:54 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module GraytoBinary_tb $end
+$var wire 1 ! z $end
+$var wire 1 " y $end
+$var wire 1 # x $end
+$var wire 1 $ w $end
+$var reg 1 % a $end
+$var reg 1 & b $end
+$var reg 1 ' c $end
+$var reg 1 ( d $end
+$scope module h1 $end
+$var wire 1 % a $end
+$var wire 1 & b $end
+$var wire 1 ' c $end
+$var wire 1 ( d $end
+$var wire 1 ) e $end
+$var wire 1 * f $end
+$var wire 1 $ w $end
+$var wire 1 # x $end
+$var wire 1 " y $end
+$var wire 1 ! z $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#10
+1!
+1(
+#20
+1"
+1*
+0(
+1'
+#30
+0!
+1(
+#40
+1!
+1#
+1)
+0(
+0'
+1&
+#50
+0!
+1(
+#60
+0"
+0*
+0(
+1'
+#70
+1!
+1(
+#80
+1"
+1*
+0(
+0'
+0&
+1$
+1%
+#90
+0!
+1(
+#100
+0"
+0*
+0(
+1'
+#110
+1!
+1(
+#120
+0!
+0#
+0)
+0(
+0'
+1&
+#130
+1!
+1(
+#140
+1"
+1*
+0(
+1'
+#150
+0!
+1(
+#160

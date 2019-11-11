@@ -1,0 +1,175 @@
+$date
+	Sat Oct 26 01:02:25 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module D_Latch_TB $end
+$var wire 1 ! Q $end
+$var reg 1 " D $end
+$var reg 1 # En $end
+$scope module d $end
+$var wire 1 # Clk $end
+$var wire 1 " D $end
+$var wire 1 $ Z $end
+$var wire 1 % Y $end
+$var wire 1 ! Q $end
+$scope module d1 $end
+$var wire 1 " D $end
+$var wire 1 # En $end
+$var reg 1 % Q $end
+$upscope $end
+$scope module d2 $end
+$var wire 1 % D $end
+$var wire 1 $ En $end
+$var reg 1 ! Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x%
+1$
+0#
+0"
+x!
+$end
+#1
+1"
+#4
+0"
+#5
+0%
+0$
+1#
+#9
+1%
+1"
+#10
+1!
+1$
+0"
+0#
+#13
+1"
+#15
+0$
+1#
+#18
+0%
+0"
+#19
+1%
+1"
+#20
+1$
+0#
+#22
+0"
+#25
+0%
+0$
+1#
+#27
+1%
+1"
+#28
+0%
+0"
+#30
+0!
+1$
+0#
+#31
+1"
+#35
+1%
+0$
+1#
+#36
+0%
+0"
+#37
+1%
+1"
+#40
+1!
+1$
+0"
+0#
+#45
+0$
+1"
+1#
+#46
+0%
+0"
+#49
+1%
+1"
+#50
+1$
+0#
+#54
+0"
+#55
+0$
+1"
+1#
+#58
+0%
+0"
+#60
+0!
+1$
+0#
+#63
+1"
+#64
+0"
+#65
+0$
+1#
+#67
+1%
+1"
+#70
+1!
+1$
+0#
+#72
+0"
+#73
+1"
+#75
+0$
+1#
+#76
+0%
+0"
+#80
+0!
+1$
+0#
+#81
+1"
+#82
+0"
+#85
+1%
+0$
+1"
+1#
+#90
+1!
+1$
+0"
+0#
+#95
+0%
+0$
+1#

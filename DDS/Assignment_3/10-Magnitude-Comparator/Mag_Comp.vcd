@@ -1,0 +1,96 @@
+$date
+	Sun Oct 13 10:07:56 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module Mag_Comp_tb $end
+$var wire 1 ! answer3 $end
+$var wire 1 " answer2 $end
+$var wire 1 # answer1 $end
+$var reg 4 $ in_a [3:0] $end
+$var reg 4 % in_b [3:0] $end
+$scope module M1 $end
+$var wire 1 # a1 $end
+$var wire 1 " a2 $end
+$var wire 1 ! a3 $end
+$var wire 4 & in_a [3:0] $end
+$var wire 4 ' in_b [3:0] $end
+$var wire 4 ( x [3:0] $end
+$scope begin genblk1[0] $end
+$upscope $end
+$scope begin genblk1[1] $end
+$upscope $end
+$scope begin genblk1[2] $end
+$upscope $end
+$scope begin genblk1[3] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1111 (
+b110 '
+b110 &
+b110 %
+b110 $
+1#
+0"
+0!
+$end
+#30
+1!
+0#
+0"
+b11 (
+b1001 %
+b1001 '
+b101 $
+b101 &
+#60
+b111 (
+b1110 %
+b1110 '
+b110 $
+b110 &
+#90
+0!
+1#
+b1111 (
+b0 %
+b0 '
+b0 $
+b0 &
+#120
+0"
+b1111 %
+b1111 '
+b1111 $
+b1111 &
+#150
+0#
+1"
+b1110 (
+b0 %
+b0 '
+b1 $
+b1 &
+#180
+0!
+1"
+b0 (
+b101 %
+b101 '
+b1010 $
+b1010 &
+#210
+b10 (
+b11 %
+b11 '
+b1110 $
+b1110 &
+#240
