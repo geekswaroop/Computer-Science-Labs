@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int n,at[10],bt[10],rt[10],wt[10],tat[10];
+    int n,at[10],bt[10],rt[10],wt[10],tat[10],prio[10];
     printf("Enter no. of processes\n");
     scanf("%d",&n);
     for(int i=0;i<n;i++)
@@ -11,8 +11,10 @@ int main()
         printf("Enter burst time process %d:",i+1);
         scanf("%d",&bt[i]);
         rt[i]=bt[i];
+        printf("Enter priority of process %d:",i+1);
+        scanf("%d",&prio[i]);
     }
-    rt[9]=9999;
+    prio[9]=9999;
     int time=0;
     int idt=0;
     int endtime=0;
@@ -24,7 +26,7 @@ int main()
         int smallest=9;
         for(int i=0;i<n;i++)
         {
-            if(at[i]<=time && rt[i]<rt[smallest] && rt[i]>0)
+            if(at[i]<=time && prio[i]<prio[smallest] && rt[i]>0)
             {
                 smallest=i;
             }

@@ -1,17 +1,19 @@
 #include<stdio.h>
 int main()
 {
-    int n,at[10],bt[10],rt[10],wt[10],tat[10];
+    int n,at[10],bt[10],rt[10],wt[10],tat[10],prio[10];
     printf("Enter no. of processes\n");
     scanf("%d",&n);
     for(int i=0;i<n;i++)
     {
-        printf("Enter arrival time process %d:",i+1);
+        printf("Enter arrival time of process %d:",i+1);
         scanf("%d",&at[i]);
-        printf("Enter burst time process %d:",i+1);
+        printf("Enter burst time of process %d:",i+1);
         scanf("%d",&bt[i]);
-        //rt[i]=bt[i];
+        printf("Enter priority of process %d:",i+1);
+        scanf("%d",&prio[i]);
     }
+    prio[9]=9999;
     int time=0;
     int idt=0;
     int endtime=0;
@@ -19,20 +21,19 @@ int main()
     int finished[10]={0};
     while(remain!=n)
     {
-        int smallarr=99999;
-        int smallest;
+
+        int smallest=9;
         for(int i=0;i<n;i++)
         {
-            if(at[i]<=smallarr && finished[i]==0)
+            if(at[i]<=time && prio[i]<prio[smallest] && finished[i]==0)
             {
-                smallarr=at[i];
                 smallest=i;
             }
         }
-        if(smallarr > time)
+        if(smallest==9)
         {
-            idt++;
-            time+=1;
+                idt++;
+                time+=1;
         }
         else
         {

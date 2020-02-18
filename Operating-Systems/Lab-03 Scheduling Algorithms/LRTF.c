@@ -10,41 +10,45 @@ int main()
         scanf("%d",&at[i]);
         printf("Enter burst time process %d:",i+1);
         scanf("%d",&bt[i]);
-        //rt[i]=bt[i];
+        rt[i]=bt[i];
     }
+    rt[9]=-1;
     int time=0;
     int idt=0;
     int endtime=0;
     int remain=0;
-    int finished[10]={0};
+    int cntx=0;
+    int prev;
     while(remain!=n)
     {
-        int smallarr=99999;
-        int smallest;
+        int largest=9;
         for(int i=0;i<n;i++)
         {
-            if(at[i]<=smallarr && finished[i]==0)
+            if(at[i]<=time && rt[i]>rt[largest] && rt[i]>0)
             {
-                smallarr=at[i];
-                smallest=i;
+                largest=i;
             }
         }
-        if(smallarr > time)
-        {
+        if(time>=1 && rt[largest]==rt[prev])
+            largest=prev;
+        if(time>=1 && largest!=prev)
+            cntx++;
+        prev=largest;
+        if(largest==9)
             idt++;
-            time+=1;
-        }
         else
         {
-            printf("Process %d from %d to %d\n",smallest+1,time,time+bt[smallest]);
-            remain++;
-            finished[smallest]=1;
-            endtime=time+bt[smallest];
-            tat[smallest]=endtime-at[smallest];
-            wt[smallest]=endtime-at[smallest]-bt[smallest];
-            time+=bt[smallest];
+            rt[largest]--;
+            printf("Process %d from %d to %d\n",largest+1,time,time+1);
+            if(rt[largest]==0)
+            {
+                remain++;
+                endtime=time+1;
+                tat[largest]=endtime-at[largest];
+                wt[largest]=endtime-at[largest]-bt[largest];
+            }
         }
-
+        time+=1;
     }
     printf("\n\nProcess\tTurnaround Time\tWaiting Time\n\n");
     for(int i=0;i<n;i++)
@@ -52,5 +56,5 @@ int main()
         printf("%d\t%d\t%d\n",i+1,tat[i],wt[i]);
     }
     printf("CPU Idle Time is %d\n",idt);
-    printf("Number of Context Swiches is %d\n",n-1);
+    printf("Number of Context Swiches is %d\n",cntx);
 }

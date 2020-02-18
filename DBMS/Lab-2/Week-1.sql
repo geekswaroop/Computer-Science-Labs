@@ -308,7 +308,7 @@ mysql> select * from Student;
 -- |                 11 | Jacky     | Dacky    | Czech Republic | 1995-01-09 |   30 |       987261 |    94 |
 -- +--------------------+-----------+----------+----------------+------------+------+--------------+-------+
 
---Question15
+**--Question15
 mysql> alter table Student Change DoB DOB date;
 Query OK, 0 rows affected (0.50 sec)
 Records: 0  Duplicates: 0  Warnings: 0
@@ -352,6 +352,6 @@ Query OK, 10 rows affected (0.05 sec)
 mysql> select * from Student;
 Empty set (0.00 sec)
 
---Question18
+**--Question18
 mysql> drop table Student;
 Query OK, 0 rows affected (0.17 sec)

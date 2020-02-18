@@ -12,6 +12,7 @@ int main()
         scanf("%d",&bt[i]);
         //rt[i]=bt[i];
     }
+    bt[9]=9999;
     int time=0;
     int idt=0;
     int endtime=0;
@@ -19,17 +20,15 @@ int main()
     int finished[10]={0};
     while(remain!=n)
     {
-        int smallarr=99999;
-        int smallest;
+        int smallest=9;
         for(int i=0;i<n;i++)
         {
-            if(at[i]<=smallarr && finished[i]==0)
+            if(at[i]<=time && bt[i]<bt[smallest] && finished[i]==0)
             {
-                smallarr=at[i];
                 smallest=i;
             }
         }
-        if(smallarr > time)
+        if(smallest==9)
         {
             idt++;
             time+=1;
