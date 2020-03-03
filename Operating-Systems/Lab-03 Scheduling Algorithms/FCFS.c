@@ -19,7 +19,7 @@ int main()
     int finished[10]={0};
     while(remain!=n)
     {
-        int smallarr=99999;
+        int smallarr=99999; //Smallest arrival Time
         int smallest;
         for(int i=0;i<n;i++)
         {
